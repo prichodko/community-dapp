@@ -4,8 +4,10 @@ import { GlobalStyle } from './providers/GlobalStyle'
 import { NotificationsList } from './components/NotificationsList'
 import { MobileRouter } from './pagesMobile/MobileRouter'
 import { DesktopRouter } from './pages/DesktopRouter'
+import { useEthers } from '@usedapp/core'
 
 export function App() {
+  console.log(useEthers())
   const [mobileVersion, setMobileVersion] = useState(false)
 
   useEffect(() => {

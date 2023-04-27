@@ -5,6 +5,6 @@ export function getCommunityDetailsSync(publicKey: string) {
 }
 
 export async function getCommunityDetails(publicKey: string) {
-  await new Promise((r) => setTimeout(r, 3000))
+  await new Promise((r) => setTimeout(r, 100))
   return getCommunityDetailsSync(publicKey)
 }

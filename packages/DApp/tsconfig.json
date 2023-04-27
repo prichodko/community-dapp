@@ -3,8 +3,10 @@
   "compilerOptions": {
     "outDir": "dist",
     "jsx": "react",
-    "typeRoots": ["./types", "./node_modules/@types", "../../node_modules/@types"]
+    "typeRoots": ["./types", "./node_modules/@types", "../../node_modules/@types"],
+    "baseUrl": "."
   },
+  "include": ["./src"],
   "exclude": ["**/dist", "**/types"],
   "ts-node": {
     "files": true,

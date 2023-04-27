@@ -9,6 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "target": "es6",
     "module": "ESNext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "noEmit": true
   }
 }

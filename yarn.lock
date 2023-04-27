@@ -3470,6 +3470,17 @@
     "@stablelib/random" "^1.0.1"
     "@stablelib/wipe" "^1.0.1"
 
+"@status-im/js@*":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@status-im/js/-/js-0.1.1.tgz#c866cd4185e38f31420ca4c0705c96ae30ce6b76"
+  integrity sha512-Fnt+yZGG+p/phctmzY48vk3gmZ+KpbZyiwLi6u+TKBl1fkeSbNraoLDcJpf5z/VIvTqI2+LbmkAePoQ1kiqTLA==
+  dependencies:
+    ethereum-cryptography "^1.0.3"
+    js-waku "^0.25.0"
+    long "^5.2.0"
+    protobufjs "^6.11.3"
+    protons-runtime "^1.0.4"
+
 "@swc/core-darwin-arm64@1.3.55":
   version "1.3.55"
   resolved "https://registry.yarnpkg.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.55.tgz#bd7fdf838a8d27c3df98d279017710a2da6af6a3"
@@ -11047,6 +11058,40 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
+js-waku@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/js-waku/-/js-waku-0.25.0.tgz#5a6593a91fd32324c8678b223e56d077ee848ce0"
+  integrity sha512-FlA1wFNfh0Vrs0jY6NXwOXtmT+9oIeYQbudyc1NXvkeHMcjoHwVXRrQH5Y83CRrYTeU5tqP80fzh+FM0tLy+qg==
+  dependencies:
+    "@chainsafe/libp2p-gossipsub" "^4.1.1"
+    "@chainsafe/libp2p-noise" "^8.0.1"
+    "@ethersproject/rlp" "^5.5.0"
+    "@libp2p/crypto" "^1.0.4"
+    "@libp2p/interface-connection" "3.0.1"
+    "@libp2p/interface-peer-discovery" "^1.0.0"
+    "@libp2p/interface-peer-id" "^1.0.2"
+    "@libp2p/interface-peer-info" "^1.0.1"
+    "@libp2p/interface-peer-store" "^1.0.0"
+    "@libp2p/interfaces" "^3.0.2"
+    "@libp2p/mplex" "^5.1.1"
+    "@libp2p/peer-id" "^1.1.10"
+    "@libp2p/websockets" "^3.0.3"
+    "@multiformats/multiaddr" "^10.4.0"
+    "@noble/secp256k1" "^1.3.4"
+    debug "^4.3.4"
+    dns-query "^0.11.2"
+    hi-base32 "^0.5.1"
+    it-all "^1.0.6"
+    it-length-prefixed "^8.0.2"
+    it-pipe "^2.0.4"
+    js-sha3 "^0.8.0"
+    libp2p "0.38.0"
+    p-event "^5.0.1"
+    protons-runtime "^3.1.0"
+    uint8arraylist "^2.3.2"
+    uint8arrays "^3.0.0"
+    uuid "^8.3.2"
+
 js-waku@^0.30.0:
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/js-waku/-/js-waku-0.30.0.tgz#5277630b03172cb13be2d0a5083ed33c8c09835f"
@@ -11792,6 +11837,11 @@ long@^5.0.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/long/-/long-5.2.1.tgz#e27595d0083d103d2fa2c20c7699f8e0c92b897f"
   integrity sha512-GKSNGeNAtw8IryjjkhZxuKB3JzlcLTwjtiQCHKvqQet81I93kXslhDQruGI/QsddO83mcDToBVy7GqGS/zYf/A==
+
+long@^5.2.0:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
+  integrity sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==
 
 longbits@^1.1.0:
   version "1.1.0"
@@ -13608,6 +13658,25 @@ protobufjs@^6.11.2:
     "@types/node" ">=13.7.0"
     long "^4.0.0"
 
+protobufjs@^6.11.3:
+  version "6.11.3"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.3.tgz#637a527205a35caa4f3e2a9a4a13ddffe0e7af74"
+  integrity sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/long" "^4.0.1"
+    "@types/node" ">=13.7.0"
+    long "^4.0.0"
+
 protobufjs@^7.0.0:
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-7.2.2.tgz#2af401d8c547b9476fb37ffc65782cf302342ca3"
@@ -13630,6 +13699,14 @@ protocol-buffers-schema@^3.3.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/protocol-buffers-schema/-/protocol-buffers-schema-3.5.1.tgz#8388e768d383ac8cbea23e1280dfadb79f4122ad"
   integrity sha512-YVCvdhxWNDP8/nJDyXLuM+UFsuPk4+1PB7WGPVDzm3HTHbzFLxQYeW2iZpS4mmnXrQJGBzt230t/BbEb7PrQaw==
+
+protons-runtime@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/protons-runtime/-/protons-runtime-1.0.4.tgz#85db97f82fb03a1205eafb591904736ba34e2972"
+  integrity sha512-DSKWjAgwaXhtYO5Jo/MrU8n/75I/P2IhxU0Fk/lSrXx6Gxl5DH+I6cHcbGAYFmAlOBmU4QRa0mvVme8VXlDeUg==
+  dependencies:
+    uint8arraylist "^1.4.0"
+    uint8arrays "^3.0.0"
 
 protons-runtime@^3.0.1, protons-runtime@^3.1.0:
   version "3.1.0"
@@ -16197,6 +16274,13 @@ uint8-varint@^1.0.1, uint8-varint@^1.0.2:
     longbits "^1.1.0"
     uint8arraylist "^2.0.0"
     uint8arrays "^4.0.2"
+
+uint8arraylist@^1.4.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/uint8arraylist/-/uint8arraylist-1.6.0.tgz#1a600e7b9bfb982631ee5ac130b7998becaaa998"
+  integrity sha512-QOh6SQJQj/eEqQ6NJ8SI9LH875uI2ShcOtWE3Yupci0RaHsZm4oP+mUCJzBzKkp+8gCK7M4l+6Ubvlaimt7CSw==
+  dependencies:
+    uint8arrays "^3.0.0"
 
 uint8arraylist@^2.0.0, uint8arraylist@^2.1.0, uint8arraylist@^2.1.1, uint8arraylist@^2.1.2, uint8arraylist@^2.3.1, uint8arraylist@^2.3.2, uint8arraylist@^2.4.3:
   version "2.4.3"
