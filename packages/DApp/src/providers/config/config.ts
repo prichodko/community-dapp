@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
-import { ChainId, MULTICALL_ADDRESSES } from '@usedapp/core'
+import { ChainId, Ropsten, OptimismGoerli } from '@usedapp/core'
 import { Fleet } from 'js-waku/lib/predefined_bootstrap_nodes'
 
 const version = '0.0.5'
@@ -21,24 +21,20 @@ interface DAppConfigs {
   [env: string]: Config
 }
 
-export enum CustomChainId {
-  OptimismGoerli = 420,
-}
-
 export const contracts = {
   [ChainId.Ropsten]: {
     // TO BE PROVIDED
     votingContract: '0x0000000000000000000000000000000000000000',
     directoryContract: '0x0000000000000000000000000000000000000000',
     tokenContract: '0x0000000000000000000000000000000000000000',
-    multicallContract: MULTICALL_ADDRESSES[ChainId.Ropsten],
+    multicallContract: Ropsten.multicallAddress,
   },
-  [CustomChainId.OptimismGoerli]: {
+  [ChainId.OptimismGoerli]: {
     // TO BE PROVIDED
     votingContract: '0x0000000000000000000000000000000000000000',
     directoryContract: '0x0000000000000000000000000000000000000000',
     tokenContract: '0x0000000000000000000000000000000000000000',
-    multicallContract: '0x805e246abef0D2C76E619E122c79b1EF2EfBd8b7',
+    multicallContract: OptimismGoerli.multicallAddress,
   },
   [ChainId.Hardhat]: {
     votingContract: process.env.VOTING_CONTRACT ?? '0x0000000000000000000000000000000000000000',
@@ -61,7 +57,7 @@ export const config: DAppConfigs = {
     fleet: Fleet.Test,
     wakuTopic: `/communitiesCuration/development/${version}/directory/proto/`,
     wakuFeatureTopic: `/communitiesCuration/development/${version}/featured/proto/`,
-    defaultChainId: CustomChainId.OptimismGoerli,
+    defaultChainId: ChainId.OptimismGoerli,
     contracts,
     statusWalletRequired: false,
   },

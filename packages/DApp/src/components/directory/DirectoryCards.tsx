@@ -10,6 +10,7 @@ import { DirectoryCardSkeleton } from './DirectoryCardSkeleton'
 import { useDirectoryCommunities } from '../../hooks/useDirectoryCommunities'
 import { SearchEmpty } from '../SearchEmpty'
 import { DirectoryCard } from './DirectoryCard'
+
 export function DirectoryCards() {
   const [filterKeyword, setFilterKeyword] = useState('')
   const [sortedBy, setSortedBy] = useState(DirectorySortingEnum.IncludedRecently)
